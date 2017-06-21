@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--JavaScript switch source link 
+https://stackoverflow.com/questions/18368319/toggle-css-sheets-on-click-with-javascript-->
+
+<link id="style1" rel="stylesheet" type="text/css" href="koala.css" />
+<link id="style2" rel="stylesheet" type="text/css" href="panda.css" disabled="disabled"/>
+<script type="text/javascript">
+function toggle() {
+  var a = document.getElementById("style1");
+  a.x = 'panda' == a.x ? 'koala' : 'panda';
+  a.href = a.x + '.css';
+}
+
+</script>
+<style>
+#box{
+	position:absolute;
+	padding:10px 20px;
+	margin-left:300px;
+}
+</style>
+</head>
+
+<body>
+ <!-- Begin Image -->
+ 
+<button id="box" type="button" onClick="toggle()">Morph</button>
+
+ <!-- Invisible Box-->
+ <div class="box" >
+
+    <!-- Circular Head-->
+    <div class="head">
+
+      <!-- Circular Head Copy -->
+      <div class="head-copy"></div>
+
+       <!-- Left Ear ~ Light Gray-->
+      <div class="ear-left">
+
+       <!-- Inner ear ~ Dark Gray -->
+      <div class="inner-ear"></div>
+      </div>
+
+      <!-- Right Ear ~ Light Gray-->
+       <div class="ear-right">
+      <!-- Inner Ear ~ Dark Gray-->
+        <div class="inner-ear"></div>
+      </div>
+
+      <!-- Left Outer Eye ~ White -->
+      <div class="eye-left">
+        <!-- Pupil ~ Black -->
+        <div class="pupil">
+        </div>
+      </div>
+
+      <!-- Right Outer Eye ~ White -->
+      <div class="eye-right">
+        <!-- Pupil ~ Black -->
+        <div class="pupil">
+        </div>
+      </div>
+
+       <!-- Nose ~ Brown -->
+       <div class="nose">
+       </div>
+
+       <!-- Hair ~ Light Gray -->
+      <div class="hair-left"></div>
+      <div class="hair-right"></div>
+
+    <!-- End Head -->
+    </div>
+ <!-- End Invisible Box -->
+ </div>
+ <div class="outer"></div>
+</body>
+<html>
